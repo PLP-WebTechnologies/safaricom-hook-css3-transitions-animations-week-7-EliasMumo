@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Cards</h1>
+        <div class="card-container">
+            <div class="card" data-color="blue">
+                <div class="card-front">
+                    <h2>Card 1</h2>
+                    <p>Hover to flip</p>
+                </div>
+                <div class="card-back">
+                    <h2>Area Calculator</h2>
+                    <input type="number" id="width" placeholder="Width">
+                    <input type="number" id="height" placeholder="Height">
+                    <button onclick="calculateArea()">Calculate Area</button>
+                    <p id="area-result"></p>
+                </div>
+            </div>
+            <div class="card" data-color="green">
+                <div class="card-front">
+                    <h2>Card 2</h2>
+                    <p>Hover to flip</p>
+                </div>
+                <div class="card-back">
+                    <h2>Scope Demo</h2>
+                    <button onclick="demonstrateScope()">Show Scope</button>
+                    <p id="scope-result"></p>
+                </div>
+            </div>
+            <div class="card" data-color="red">
+                <div class="card-front">
+                    <h2>Card 3</h2>
+                    <p>Hover to flip</p>
+                </div>
+                <div class="card-back">
+                    <h2>Toggle Animation</h2>
+                    <div id="animation-target"></div>
+                    <button onclick="toggleAnimation()">Toggle Animation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
